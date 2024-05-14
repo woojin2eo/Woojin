@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form tag의 input 태그 연습</title>
+</head>
+<body>
+    <form>
+        <h3>수강 분야(다수 선택 가능)</h3>
+        <ul>
+            <li><input type="checkbox" value="grm">문법</li>
+            <li><input type="checkbox" value="write">작문</li>
+            <li><input type="checkbox" value="read" checked>독해</li>
+            <!-- checked 초기 화면에 체크 해둔다 -->
+        </ul>
+        <h3>수강 과목</h3>
+        <ul>
+            <li>
+                <input type="radio" name="subject" values="eng">영어회화</input>
+            </li>
+            <li>
+                <input type="radio" name="subject" values="ch">중국어회화</input>
+            </li>
+            <li>
+                <input type="radio" name="subject" values="jp">일어회화</input>
+            </li>
+            <!-- name을 subject로 묶었기 때문에 중복 선택이 안 됨 -->
+        </ul>
+    </form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>select option 콤보박스, 드롭다운리스트</title>
+</head>
+
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>개인 정보 입력</legend>
+            <label for="city">지역</label>
+            <select name="city" id="city">
+            <!-- <select name="city" id="city" multiple size="3"> -->
+                <!-- multiple은 컨트롤 눌러서 중복 선택 가능 size는 길이 -->
+                <optgroup label="서울시">
+                    <option value="강북구">강북구</option>
+                    <option value="강남구">강남구</option>
+                    <option value="서초구" selected>서초구</option>
+                    <!-- selected 초기에 설정된 값 -->
+                </optgroup>
+                <optgroup label="경기도 성남시">
+                    <option value="중원구">중원구</option>
+                    <option value="분당구">분당구</option>
+                </optgroup>
+            </select>
+        </fieldset>
+    </form>
+</body>
+
+</html>

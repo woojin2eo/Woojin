@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>em_rem</title>
+    <style>
+        .parent {
+            font-size: 16px;
+        }
+
+        .child {
+            font-size: 1.5em;
+            /* 16px * 1.5em = 24px */
+        }
+
+        .grandChild {
+            font-size: 1.5em;
+            /* 24px * 1.5em = 36px */
+        }
+
+        .lastChild {
+            font-size: 1.0rem;
+            /* 16px * 1.5rem = 24px */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        부모 요소 - 폰트 사이즈 16px
+        <div class="child">
+            자식의 요소 - 폰트 사이즈 1.5em
+            <div class="grandChild">
+                자식의 자식 요소 - 폰트 사이즈 1.5em
+                <div class="lastChild">
+                    자식의 자식의 자식 요소 - 폰트 사이즈 1.0rem
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
